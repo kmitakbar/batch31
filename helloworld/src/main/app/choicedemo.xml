@@ -10,8 +10,8 @@ http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/m
     <flow name="choicedemoFlow">
         <file:inbound-endpoint path="inbox" responseTimeout="10000" doc:name="File"/>
         <choice doc:name="Choice">
-            <when expression="#[message.inboundProperties.originalFilename.endsWith('txt')]">
-                <file:outbound-endpoint path="textfile" responseTimeout="10000" doc:name="all_text_files"/>
+            <when expression="#[(message.inboundProperties.originalFilename.endsWith('doc')) || (message.inboundProperties.originalFilename.endsWith('docx'))]">
+                <file:outbound-endpoint path="docs" responseTimeout="10000" doc:name="doc"/>
             </when>
             <when expression="#[message.inboundProperties.originalFilename.endsWith('pdf')]">
                 <file:outbound-endpoint path="pdffiles" responseTimeout="10000" doc:name="pdffiles"/>

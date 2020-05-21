@@ -1,0 +1,57 @@
+I5yrD3*L)bC5%f=@h*J3eK-TVICrptme
+
+http://ec2-13-232-222-32.ap-south-1.compute.amazonaws.com:8080/index.html
+
+
+http://ec2-13-233-156-250.ap-south-1.compute.amazonaws.com:8080/index.html
+
+"aws2.pem" ubuntu@ec2-13-127-53-151.ap-south-1.compute.amazonaws.com
+
+https://apar.s3.ap-south-1.amazonaws.com/apar.jar
+
+
+6c249694908943409ea9c513dff9e250 clinetid A.P
+
+
+71b3D99DA1234b1EaD32ef3b722225Bf secret A.P
+
+15930730
+
+
+8500858883
+
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY4MTg1ZmYxLTRlNTEtNGNlOS1hZjFjLTY4OTgxMjIwMzMxNyJ9.eyJUb2tlblR5cGUiOjUsIklzc3VlSW5zdGFudCI6MTU3NzI1MjMyNywiZXhwIjoxNTc3MjgxMTI3LCJVc2VySWQiOiJmMzgwMDRlOC0zNWZiLTQxMmQtOWMwZS0yYjJlYWVjZjFhZTIiLCJzaXRlaWQiOjEsInNjcCI6WyJzaWduYXR1cmUiLCJjbGljay5tYW5hZ2UiLCJvcmdhbml6YXRpb25fcmVhZCIsImdyb3VwX3JlYWQiLCJwZXJtaXNzaW9uX3JlYWQiLCJ1c2VyX3JlYWQiLCJ1c2VyX3dyaXRlIiwiYWNjb3VudF9yZWFkIiwiZG9tYWluX3JlYWQiLCJpZGVudGl0eV9wcm92aWRlcl9yZWFkIiwiZHRyLnJvb21zLnJlYWQiLCJkdHIucm9vbXMud3JpdGUiLCJkdHIuZG9jdW1lbnRzLnJlYWQiLCJkdHIuZG9jdW1lbnRzLndyaXRlIiwiZHRyLnByb2ZpbGUucmVhZCIsImR0ci5wcm9maWxlLndyaXRlIiwiZHRyLmNvbXBhbnkucmVhZCIsImR0ci5jb21wYW55LndyaXRlIl0sImF1ZCI6ImYwZjI3ZjBlLTg1N2QtNGE3MS1hNGRhLTMyY2VjYWUzYTk3OCIsImF6cCI6ImYwZjI3ZjBlLTg1N2QtNGE3MS1hNGRhLTMyY2VjYWUzYTk3OCIsImlzcyI6Imh0dHBzOi8vYWNjb3VudC1kLmRvY3VzaWduLmNvbS8iLCJzdWIiOiJmMzgwMDRlOC0zNWZiLTQxMmQtOWMwZS0yYjJlYWVjZjFhZTIiLCJhbXIiOlsiaW50ZXJhY3RpdmUiXSwiYXV0aF90aW1lIjoxNTc3MjUyMzIzLCJwd2lkIjoiMGM1MjE4YWMtZWE4Mi00NjM2LWJkYWMtMzFjZjMwMWJiYTRmIn0.a1lx3xETFsD876h3MegI1FTJ8DW8s_Tc4QiFr9dlN6kl-rCBKyyfiPnrdXyHM5Yv_TEFlyhindybO6S3x3ypyJR6FzWlZ097f2cxsKT9NiPQS7LY90JRkcGWXXuoCsJ2K1LlGMmAGSpfSsN5v9dYQJcvzvN1-LmT3goPUq7VJZ1MaQK_JrUsT9jaa5joMtuhBRX4RhkFjU3JLvCHir6VYc7FnnH4cNfbBEuvZ1Qjl92g4RxoezG_z4qh02Hjst3vl1BuYbYFEuwyYYhwjdan2ssB2fhrIYo85kasOP9DxzaXDa4rXGn8G3zVP8dfiazdURjHZWpg58rT1R4RdMp7Og
+
+
+
+GET https://account-d.docusign.com/oauth/auth?
+
+   response_type=code
+
+   &scope=signature
+
+   &client_id={CLIENT_ID}
+
+   &state=a39fh23hnf23
+
+   &redirect_uri={REDIRECT_URI}
+
+
+
+POST https://account-d.docusign.com/oauth/token
+
+Content-Type: application/x-www-form-urlencoded
+
+Authorization: Basic BASE64_COMBINATION_OF_INTEGRATOR_AND_SECRET_KEYS
+
+
+grant_type=authorization_code&authorization_code=YOUR_AUTHORIZATION_CODE
+
+
+
+449303373
+
+
+
+58e2f49205b0ba0e94d0ba551c33bb20d3b72744    gitkey
