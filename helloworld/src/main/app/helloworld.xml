@@ -9,8 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="9999" basePath="mule" doc:name="HTTP Listener Configuration"/>
     <flow name="helloworldFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/hi" doc:name="listening_for_request"/>
-        <set-variable variableName="n" value="#[message.inboundProperties.'http.query.params'.name]" doc:name="firstflowvar"/>
         <logger message="test infoormation:::::: #[message.inboundProperties.'http.query.string'.name]" level="INFO" doc:name="Logger"/>
-        <set-payload value="Hello world! ! , the gender is  #[message.inboundProperties.'http.query.params'.gender]" doc:name="Set Payload"/>
+        <set-payload value=" #[message.inboundProperties.'http.query.params'.name]" doc:name="Set Payload"/>
     </flow>
 </mule>

@@ -1,0 +1,827 @@
+2020-05-27 11:25:58,998 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'smtpdemo'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-27 11:25:59,712 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-27 11:25:59,799 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-27 11:26:00,180 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-27 11:26:00,517 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-27 11:26:00,517 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-27 11:26:01,072 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@3b9d6699: startup date [Wed May 27 11:26:01 IST 2020]; root of context hierarchy
+2020-05-27 11:26:05,634 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-27 11:26:07,118 [main] WARN  org.springframework.beans.GenericTypeAwarePropertyDescriptor - Invalid JavaBean property 'port' being accessed! Ambiguous write methods found next to actually used [public void org.mule.endpoint.URIBuilder.setPort(java.lang.String)]: [public void org.mule.endpoint.URIBuilder.setPort(int)]
+2020-05-27 11:26:08,341 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-27 11:26:09,164 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-tx-log\tx2.log
+2020-05-27 11:26:09,197 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-xa-tx-log\tx2.log
+2020-05-27 11:26:09,268 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Gmail
+2020-05-27 11:26:10,757 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-27 11:26:10,772 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: smtpdemoFlow
+2020-05-27 11:26:10,772 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@315105f
+2020-05-27 11:26:11,589 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: smtpdemoFlow.stage1
+2020-05-27 11:26:12,156 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\smtpdemo\smtpdemo.xml'}]"
+2020-05-27 11:26:12,157 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\smtpdemo\smtpdemo.xml'}]"
+2020-05-27 11:26:12,169 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-27 11:26:12,170 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'smtpdemo'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-27 11:26:12,224 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-27 11:26:12,224 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-27 11:26:12,323 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/smtp
+2020-05-27 11:26:12,332 [main] INFO  org.mule.transport.email.GmailSmtpConnector - Connected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=3330f3ad
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-27 11:26:12,332 [main] INFO  org.mule.transport.email.GmailSmtpConnector - Starting: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=3330f3ad
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-27 11:26:12,335 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Gmail
+2020-05-27 11:26:12,347 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-27 11:26:12,350 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: smtpdemoFlow
+2020-05-27 11:26:12,351 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: smtpdemoFlow.stage1
+2020-05-27 11:26:12,434 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-27 11:26:21,547 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.smtpdemo:type=Connector,name="Gmail"
+2020-05-27 11:26:21,551 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: smtpdemo                                              *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-27 11:27:22,866 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.email.transformers.ObjectToMimeMessage
+2020-05-27 11:27:22,898 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Gmail.dispatcher.2102280198'. Object is: SmtpMessageDispatcher
+2020-05-27 11:27:36,959 [[smtpdemo].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Unable to connect to mail transport.
+Payload               : {NullPayload}
+Payload Type          : org.mule.transport.NullPayload
+Element               : /smtpdemoFlow/processors/0 @ smtpdemo:smtpdemo.xml:14 (SMTP)
+Element XML           : <smtp:outbound-endpoint host="smtp.gmail.com" port="587" user="mule4java@gmail.com" password="<<credentials>>" connector-ref="Gmail" to="akbarmd.mca@gmail.com,ramakanth.v6@gmail.com" from="mule4java@gmail.com" subject="frm mule training" responseTimeout="10000" doc:name="SMTP"></smtp:outbound-endpoint>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials c4sm1057980pfb.130 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:893)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:814)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:728)
+	at javax.mail.Service.connect(Service.java:386)
+	at org.mule.transport.email.SmtpMessageDispatcher.doConnect(SmtpMessageDispatcher.java:60)
+	at org.mule.transport.AbstractTransportMessageHandler.connectHandler(AbstractTransportMessageHandler.java:229)
+	at org.mule.transport.AbstractTransportMessageHandler.connect(AbstractTransportMessageHandler.java:217)
+	at org.mule.transport.AbstractTransportMessageHandler.start(AbstractTransportMessageHandler.java:305)
+	at org.mule.transport.MessageDispatcherUtils.applyLifecycle(MessageDispatcherUtils.java:31)
+	at org.mule.transport.KeyedPoolMessageDispatcherFactoryAdapter.applyLifecycle(KeyedPoolMessageDispatcherFactoryAdapter.java:108)
+	at org.mule.transport.KeyedPoolMessageDispatcherFactoryAdapter.makeObject(KeyedPoolMessageDispatcherFactoryAdapter.java:60)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.mule.transport.DefaultConfigurableKeyedObjectPool.borrowObject(DefaultConfigurableKeyedObjectPool.java:36)
+	at org.mule.transport.AbstractConnector.borrowDispatcher(AbstractConnector.java:1092)
+	at org.mule.transport.AbstractConnector$DispatcherMessageProcessor.process(AbstractConnector.java:2725)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:110)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:57)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.EndpointTransactionalInterceptingMessageProcessor.process(EndpointTransactionalInterceptingMessageProcessor.java:73)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:62)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.endpoint.DefaultOutboundEndpoint.process(DefaultOutboundEndpoint.java:100)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:110)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:62)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:57)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:232)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:74)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:60)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:36)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:112)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:39)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:137)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:110)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:540)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:126)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:32)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:149)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2020-05-27 11:30:32,557 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.email.transformers.ObjectToMimeMessage
+2020-05-27 11:30:32,558 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Gmail.dispatcher.400012196'. Object is: SmtpMessageDispatcher
+2020-05-27 11:30:45,839 [[smtpdemo].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Unable to connect to mail transport.
+Payload               : {NullPayload}
+Payload Type          : org.mule.transport.NullPayload
+Element               : /smtpdemoFlow/processors/0 @ smtpdemo:smtpdemo.xml:14 (SMTP)
+Element XML           : <smtp:outbound-endpoint host="smtp.gmail.com" port="587" user="mule4java@gmail.com" password="<<credentials>>" connector-ref="Gmail" to="akbarmd.mca@gmail.com,ramakanth.v6@gmail.com" from="mule4java@gmail.com" subject="frm mule training" responseTimeout="10000" doc:name="SMTP"></smtp:outbound-endpoint>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials q134sm1122699pfc.143 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:893)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:814)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:728)
+	at javax.mail.Service.connect(Service.java:386)
+	at org.mule.transport.email.SmtpMessageDispatcher.doConnect(SmtpMessageDispatcher.java:60)
+	at org.mule.transport.AbstractTransportMessageHandler.connectHandler(AbstractTransportMessageHandler.java:229)
+	at org.mule.transport.AbstractTransportMessageHandler.connect(AbstractTransportMessageHandler.java:217)
+	at org.mule.transport.AbstractTransportMessageHandler.start(AbstractTransportMessageHandler.java:305)
+	at org.mule.transport.MessageDispatcherUtils.applyLifecycle(MessageDispatcherUtils.java:31)
+	at org.mule.transport.KeyedPoolMessageDispatcherFactoryAdapter.applyLifecycle(KeyedPoolMessageDispatcherFactoryAdapter.java:108)
+	at org.mule.transport.KeyedPoolMessageDispatcherFactoryAdapter.makeObject(KeyedPoolMessageDispatcherFactoryAdapter.java:60)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.mule.transport.DefaultConfigurableKeyedObjectPool.borrowObject(DefaultConfigurableKeyedObjectPool.java:36)
+	at org.mule.transport.AbstractConnector.borrowDispatcher(AbstractConnector.java:1092)
+	at org.mule.transport.AbstractConnector$DispatcherMessageProcessor.process(AbstractConnector.java:2725)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:110)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:57)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.EndpointTransactionalInterceptingMessageProcessor.process(EndpointTransactionalInterceptingMessageProcessor.java:73)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:62)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.endpoint.DefaultOutboundEndpoint.process(DefaultOutboundEndpoint.java:100)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:110)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:62)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:57)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:232)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:74)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:60)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:36)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:112)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:39)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:137)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:110)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:540)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:126)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:32)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:149)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2020-05-27 11:32:35,252 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.email.transformers.ObjectToMimeMessage
+2020-05-27 11:32:35,258 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Gmail.dispatcher.1666873051'. Object is: SmtpMessageDispatcher
+2020-05-27 11:32:46,728 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Gmail.dispatcher.1666873051'. Object is: SmtpMessageDispatcher
+2020-05-28 09:11:58,413 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'smtpdemo'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:11:59,201 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-28 09:11:59,239 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-28 09:11:59,570 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-28 09:12:00,350 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-28 09:12:00,351 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-28 09:12:00,634 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@3b9d6699: startup date [Thu May 28 09:12:00 IST 2020]; root of context hierarchy
+2020-05-28 09:12:05,525 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-28 09:12:06,853 [main] WARN  org.springframework.beans.GenericTypeAwarePropertyDescriptor - Invalid JavaBean property 'port' being accessed! Ambiguous write methods found next to actually used [public void org.mule.endpoint.URIBuilder.setPort(java.lang.String)]: [public void org.mule.endpoint.URIBuilder.setPort(int)]
+2020-05-28 09:12:07,959 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-28 09:12:08,775 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-tx-log\tx2.log
+2020-05-28 09:12:08,820 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-xa-tx-log\tx2.log
+2020-05-28 09:12:08,833 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Gmail
+2020-05-28 09:12:09,485 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-28 09:12:09,509 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: smtpdemoFlow
+2020-05-28 09:12:09,511 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@493da830
+2020-05-28 09:12:09,614 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: smtpdemoFlow.stage1
+2020-05-28 09:12:10,223 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\smtpdemo\smtpdemo.xml'}]"
+2020-05-28 09:12:10,223 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\smtpdemo\smtpdemo.xml'}]"
+2020-05-28 09:12:10,231 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-28 09:12:10,234 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'smtpdemo'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:12:10,261 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-28 09:12:10,261 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-28 09:12:10,366 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/smtp
+2020-05-28 09:12:10,373 [main] INFO  org.mule.transport.email.GmailSmtpConnector - Connected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=d535a3d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-28 09:12:10,373 [main] INFO  org.mule.transport.email.GmailSmtpConnector - Starting: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=d535a3d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-28 09:12:10,382 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Gmail
+2020-05-28 09:12:10,406 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-28 09:12:10,409 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: smtpdemoFlow
+2020-05-28 09:12:10,411 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: smtpdemoFlow.stage1
+2020-05-28 09:12:10,537 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-28 09:12:19,718 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.smtpdemo:type=Connector,name="Gmail"
+2020-05-28 09:12:19,722 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: smtpdemo                                              *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-28 09:12:49,844 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.email.transformers.ObjectToMimeMessage
+2020-05-28 09:12:49,877 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Gmail.dispatcher.491888535'. Object is: SmtpMessageDispatcher
+2020-05-28 09:13:01,999 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Gmail.dispatcher.491888535'. Object is: SmtpMessageDispatcher
+2020-05-28 09:15:59,991 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'smtpdemo'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:15:59,993 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: smtpdemoFlow
+2020-05-28 09:15:59,994 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: smtpdemoFlow.stage1
+2020-05-28 09:16:00,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-28 09:16:00,123 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Gmail
+2020-05-28 09:16:00,129 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'Gmail.dispatcher.491888535'. Object is: SmtpMessageDispatcher
+2020-05-28 09:16:00,385 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'Gmail.dispatcher.491888535'. Object is: SmtpMessageDispatcher
+2020-05-28 09:16:00,391 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/smtp
+2020-05-28 09:16:00,393 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-28 09:16:00,393 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-28 09:16:00,400 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'smtpdemo'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:16:00,403 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-28 09:16:00,407 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: smtpdemoFlow
+2020-05-28 09:16:00,409 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: smtpdemoFlow.stage1
+2020-05-28 09:16:00,415 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-28 09:16:00,419 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Disconnected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=stop
+  this=d535a3d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-28 09:16:00,421 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: Gmail
+2020-05-28 09:16:00,679 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@3b9d6699: startup date [Thu May 28 09:12:00 IST 2020]; root of context hierarchy
+2020-05-28 09:16:00,709 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "smtpdemo" shut down normally on: 28/5/20 9:16 AM      *
+* Up for: 0 days, 0 hours, 3 mins, 50.472 sec                        *
+**********************************************************************
+2020-05-28 09:16:01,038 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'smtpdemo'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:16:01,048 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-28 09:16:01,052 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-28 09:16:01,059 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-28 09:16:01,120 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-28 09:16:01,120 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-28 09:16:01,138 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@63ccc5ff: startup date [Thu May 28 09:16:01 IST 2020]; root of context hierarchy
+2020-05-28 09:16:02,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-28 09:16:02,679 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-tx-log\tx2.log
+2020-05-28 09:16:02,682 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-xa-tx-log\tx2.log
+2020-05-28 09:16:02,689 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Gmail
+2020-05-28 09:16:02,832 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-28 09:16:02,835 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: smtpdemoFlow
+2020-05-28 09:16:02,835 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@100e5e0a
+2020-05-28 09:16:02,844 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: smtpdemoFlow.stage1
+2020-05-28 09:16:02,906 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\smtpdemo\smtpdemo.xml'}]"
+2020-05-28 09:16:02,906 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\smtpdemo\smtpdemo.xml'}]"
+2020-05-28 09:16:02,908 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'smtpdemo'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:16:02,913 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-28 09:16:02,913 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-28 09:16:02,948 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/smtp
+2020-05-28 09:16:02,961 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Connected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=19b23107
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-28 09:16:02,961 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Starting: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=19b23107
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-28 09:16:02,962 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Gmail
+2020-05-28 09:16:02,977 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-28 09:16:02,981 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: smtpdemoFlow
+2020-05-28 09:16:02,981 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: smtpdemoFlow.stage1
+2020-05-28 09:16:03,001 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-28 09:16:03,009 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.smtpdemo:type=Connector,name="Gmail"
+2020-05-28 09:16:03,011 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: smtpdemo                                              *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-28 09:16:48,523 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.email.transformers.ObjectToMimeMessage
+2020-05-28 09:16:48,523 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Gmail.dispatcher.1267479353'. Object is: SmtpMessageDispatcher
+2020-05-28 09:16:59,791 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Gmail.dispatcher.1267479353'. Object is: SmtpMessageDispatcher
+2020-05-28 09:20:23,154 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'smtpdemo'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:20:23,157 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: smtpdemoFlow
+2020-05-28 09:20:23,157 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: smtpdemoFlow.stage1
+2020-05-28 09:20:23,170 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-28 09:20:23,182 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Gmail
+2020-05-28 09:20:23,183 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'Gmail.dispatcher.1267479353'. Object is: SmtpMessageDispatcher
+2020-05-28 09:20:23,447 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'Gmail.dispatcher.1267479353'. Object is: SmtpMessageDispatcher
+2020-05-28 09:20:23,451 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/smtp
+2020-05-28 09:20:23,453 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-28 09:20:23,455 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-28 09:20:23,460 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'smtpdemo'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:20:23,460 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-28 09:20:23,462 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: smtpdemoFlow
+2020-05-28 09:20:23,462 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: smtpdemoFlow.stage1
+2020-05-28 09:20:23,463 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-28 09:20:23,471 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Disconnected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=stop
+  this=19b23107
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-28 09:20:23,475 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: Gmail
+2020-05-28 09:20:23,501 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@63ccc5ff: startup date [Thu May 28 09:16:01 IST 2020]; root of context hierarchy
+2020-05-28 09:20:23,536 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "smtpdemo" shut down normally on: 28/5/20 9:20 AM      *
+* Up for: 0 days, 0 hours, 4 mins, 20.627 sec                        *
+**********************************************************************
+2020-05-28 09:20:23,941 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'smtpdemo'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:20:23,968 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-28 09:20:23,971 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-28 09:20:23,980 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-28 09:20:24,015 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-28 09:20:24,015 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-28 09:20:24,031 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2cbc7289: startup date [Thu May 28 09:20:24 IST 2020]; root of context hierarchy
+2020-05-28 09:20:24,892 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-28 09:20:25,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-tx-log\tx2.log
+2020-05-28 09:20:25,346 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-xa-tx-log\tx2.log
+2020-05-28 09:20:25,349 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Gmail
+2020-05-28 09:20:25,393 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-28 09:20:25,399 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: smtpdemoFlow
+2020-05-28 09:20:25,401 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@59abbd4
+2020-05-28 09:20:25,409 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: smtpdemoFlow.stage1
+2020-05-28 09:20:25,458 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\smtpdemo\smtpdemo.xml'}]"
+2020-05-28 09:20:25,462 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\smtpdemo\smtpdemo.xml'}]"
+2020-05-28 09:20:25,491 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'smtpdemo'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:20:25,529 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-28 09:20:25,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-28 09:20:25,617 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/smtp
+2020-05-28 09:20:25,640 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Connected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=10a7b62f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-28 09:20:25,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Starting: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=10a7b62f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-28 09:20:25,679 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Gmail
+2020-05-28 09:20:25,694 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-28 09:20:25,708 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: smtpdemoFlow
+2020-05-28 09:20:25,713 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: smtpdemoFlow.stage1
+2020-05-28 09:20:25,833 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-28 09:20:25,843 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.smtpdemo:type=Connector,name="Gmail"
+2020-05-28 09:20:25,851 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: smtpdemo                                              *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-28 09:20:31,556 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.email.transformers.ObjectToMimeMessage
+2020-05-28 09:20:31,558 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Gmail.dispatcher.463102164'. Object is: SmtpMessageDispatcher
+2020-05-28 09:20:42,792 [[smtpdemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Gmail.dispatcher.463102164'. Object is: SmtpMessageDispatcher
+2020-05-28 09:24:10,964 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'smtpdemo'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:24:10,966 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: smtpdemoFlow
+2020-05-28 09:24:10,966 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: smtpdemoFlow.stage1
+2020-05-28 09:24:11,146 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-28 09:24:11,150 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Gmail
+2020-05-28 09:24:11,151 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'Gmail.dispatcher.463102164'. Object is: SmtpMessageDispatcher
+2020-05-28 09:24:11,406 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'Gmail.dispatcher.463102164'. Object is: SmtpMessageDispatcher
+2020-05-28 09:24:11,412 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/smtp
+2020-05-28 09:24:11,414 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-28 09:24:11,414 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-28 09:24:11,419 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'smtpdemo'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:24:11,419 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-28 09:24:11,420 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: smtpdemoFlow
+2020-05-28 09:24:11,420 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: smtpdemoFlow.stage1
+2020-05-28 09:24:11,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-28 09:24:11,426 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Disconnected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=stop
+  this=10a7b62f
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-28 09:24:11,430 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: Gmail
+2020-05-28 09:24:11,468 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@2cbc7289: startup date [Thu May 28 09:20:24 IST 2020]; root of context hierarchy
+2020-05-28 09:24:11,482 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "smtpdemo" shut down normally on: 28/5/20 9:24 AM      *
+* Up for: 0 days, 0 hours, 3 mins, 45.990 sec                        *
+**********************************************************************
+2020-05-28 09:24:11,798 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'smtpdemo'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:24:11,846 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-28 09:24:11,851 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-28 09:24:12,041 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-28 09:24:12,225 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-28 09:24:12,229 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-28 09:24:12,233 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2d29537b: startup date [Thu May 28 09:24:12 IST 2020]; root of context hierarchy
+2020-05-28 09:24:12,822 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-28 09:24:13,355 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-tx-log\tx2.log
+2020-05-28 09:24:13,362 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\smtpdemo\queue-xa-tx-log\tx2.log
+2020-05-28 09:24:13,367 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Gmail
+2020-05-28 09:24:13,407 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-28 09:24:13,417 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: smtpdemoFlow
+2020-05-28 09:24:13,421 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@ed04b88
+2020-05-28 09:24:13,439 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: smtpdemoFlow.stage1
+2020-05-28 09:24:13,491 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\smtpdemo\smtpdemo.xml'}]"
+2020-05-28 09:24:13,494 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\smtpdemo\smtpdemo.xml'}]"
+2020-05-28 09:24:13,507 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'smtpdemo'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:24:13,512 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-28 09:24:13,512 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-28 09:24:13,529 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/smtp
+2020-05-28 09:24:13,539 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Connected: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=37a5c7e1
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-28 09:24:13,540 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.email.GmailSmtpConnector - Starting: GmailSmtpConnector
+{
+  name=Gmail
+  lifecycle=initialise
+  this=37a5c7e1
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[smtp]
+  serviceOverrides=<none>
+}
+
+2020-05-28 09:24:13,540 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Gmail
+2020-05-28 09:24:13,545 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-28 09:24:13,547 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: smtpdemoFlow
+2020-05-28 09:24:13,551 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: smtpdemoFlow.stage1
+2020-05-28 09:24:13,574 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-28 09:24:13,578 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.smtpdemo:type=Connector,name="Gmail"
+2020-05-28 09:24:13,580 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: smtpdemo                                              *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

@@ -1,0 +1,42 @@
+2020-05-26 10:16:30,694 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'onpremise-deploy'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-26 10:16:31,404 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-26 10:16:31,475 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-26 10:16:31,858 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-26 10:16:32,251 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-26 10:16:32,251 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-26 10:16:32,731 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@3b9d6699: startup date [Tue May 26 10:16:32 IST 2020]; root of context hierarchy
+2020-05-26 10:16:35,640 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-26 10:16:37,915 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-26 10:16:38,862 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\onpremise-deploy\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\onpremise-deploy\queue-tx-log\tx2.log
+2020-05-26 10:16:38,924 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\onpremise-deploy\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\onpremise-deploy\queue-xa-tx-log\tx2.log
+2020-05-26 10:16:39,166 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-26 10:16:39,175 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: onpremise-deployFlow
+2020-05-26 10:16:39,176 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7c1447b5
+2020-05-26 10:16:39,256 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: onpremise-deployFlow.stage1
+2020-05-26 10:16:40,052 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\onpremise-deploy\onpremise-deploy.xml'}]"
+2020-05-26 10:16:40,052 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\onpremise-deploy\onpremise-deploy.xml'}]"
+2020-05-26 10:16:40,061 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-26 10:16:40,063 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'onpremise-deploy'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-26 10:16:40,096 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-26 10:16:40,097 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-26 10:16:40,171 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/mule
+2020-05-26 10:16:40,176 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-26 10:16:40,178 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: onpremise-deployFlow
+2020-05-26 10:16:40,179 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: onpremise-deployFlow.stage1
+2020-05-26 10:16:40,314 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-26 10:16:49,417 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: onpremise-deploy                                      *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
