@@ -422,3 +422,55 @@
 *   Wrapper Manager                                                  *
 **********************************************************************
 2020-05-22 11:07:32,324 [[dbdemo].HTTP_Listener_Configuration.worker.02] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2020-05-28 09:36:19,573 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'dbdemo'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:36:20,308 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-28 09:36:20,325 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-28 09:36:20,574 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-28 09:36:20,831 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-28 09:36:20,831 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-28 09:36:21,324 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@30ed9c6c: startup date [Thu May 28 09:36:21 IST 2020]; root of context hierarchy
+2020-05-28 09:36:26,149 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-28 09:36:28,555 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-28 09:36:29,362 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-tx-log\tx2.log
+2020-05-28 09:36:29,390 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-xa-tx-log\tx2.log
+2020-05-28 09:36:29,531 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-28 09:36:29,541 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: dbdemoFlow
+2020-05-28 09:36:29,541 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@71370fec
+2020-05-28 09:36:29,608 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: dbdemoFlow.stage1
+2020-05-28 09:36:29,632 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: deletedemoFlow
+2020-05-28 09:36:29,632 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4c82b5df
+2020-05-28 09:36:29,638 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: deletedemoFlow.stage1
+2020-05-28 09:36:29,639 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: empsaveFlow
+2020-05-28 09:36:29,639 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7ef8eda7
+2020-05-28 09:36:29,647 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: empsaveFlow.stage1
+2020-05-28 09:36:30,088 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\dbdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\deletedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\empsave.xml'}]"
+2020-05-28 09:36:30,088 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\dbdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\deletedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\empsave.xml'}]"
+2020-05-28 09:36:30,098 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-28 09:36:30,099 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'dbdemo'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 09:36:30,121 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-28 09:36:30,122 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-28 09:36:30,178 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/db
+2020-05-28 09:36:30,198 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-28 09:36:30,201 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: dbdemoFlow
+2020-05-28 09:36:30,203 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: dbdemoFlow.stage1
+2020-05-28 09:36:30,217 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: deletedemoFlow
+2020-05-28 09:36:30,218 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: deletedemoFlow.stage1
+2020-05-28 09:36:30,221 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: empsaveFlow
+2020-05-28 09:36:30,221 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: empsaveFlow.stage1
+2020-05-28 09:36:30,279 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-28 09:36:39,331 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: dbdemo                                                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

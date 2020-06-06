@@ -1,0 +1,56 @@
+INFO  2020-05-29 10:09:24,342 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ New domain 'loansdomain'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2020-05-29 10:09:24,343 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing domain 'loansdomain'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2020-05-29 10:09:25,009 [main] org.mule.util.JdkVersionUtils: You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+INFO  2020-05-29 10:09:25,029 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2020-05-29 10:09:25,324 [main] org.mule.config.spring.MuleDomainContext: Refreshing org.mule.config.spring.MuleDomainContext@2fea7088: startup date [Fri May 29 10:09:25 IST 2020]; root of context hierarchy
+INFO  2020-05-29 10:09:28,518 [main] org.mule.config.spring.processors.ContextExclusiveInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2020-05-29 10:09:30,265 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\loansdomain\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\loansdomain\queue-tx-log\tx2.log
+INFO  2020-05-29 10:09:30,295 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\loansdomain\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\loansdomain\queue-xa-tx-log\tx2.log
+INFO  2020-05-29 10:09:30,767 [main] org.mule.config.spring.SpringXmlDomainConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlDomainConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='mule-domain-config.xml'}]"
+INFO  2020-05-29 10:09:30,775 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2020-05-29 10:09:30,775 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2020-05-29 10:09:30,889 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081/loans
+INFO  2020-05-29 10:09:30,924 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2020-05-29 10:09:39,946 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: loansdomain                                           *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2020-05-29 10:12:33,661 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ New domain 'loansdomain'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2020-05-29 10:12:33,662 [main] org.mule.module.launcher.domain.DefaultMuleDomain: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing domain 'loansdomain'                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2020-05-29 10:12:34,502 [main] org.mule.util.JdkVersionUtils: You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+INFO  2020-05-29 10:12:34,529 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2020-05-29 10:12:34,909 [main] org.mule.config.spring.MuleDomainContext: Refreshing org.mule.config.spring.MuleDomainContext@2fea7088: startup date [Fri May 29 10:12:34 IST 2020]; root of context hierarchy
+INFO  2020-05-29 10:12:38,740 [main] org.mule.config.spring.processors.ContextExclusiveInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2020-05-29 10:12:40,382 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\loansdomain\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\loansdomain\queue-tx-log\tx2.log
+INFO  2020-05-29 10:12:40,420 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\loansdomain\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\loansdomain\queue-xa-tx-log\tx2.log
+INFO  2020-05-29 10:12:40,941 [main] org.mule.config.spring.SpringXmlDomainConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlDomainConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='mule-domain-config.xml'}]"
+INFO  2020-05-29 10:12:40,951 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2020-05-29 10:12:40,952 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2020-05-29 10:12:41,040 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081/loans
+INFO  2020-05-29 10:12:41,063 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2020-05-29 10:12:50,086 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: loansdomain                                           *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

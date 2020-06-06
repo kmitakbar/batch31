@@ -10315,3 +10315,153 @@ org.mule.api.expression.InvalidExpressionException: [Error: unbalanced braces [ 
 2020-05-20 10:09:49,490 [[helloworld].connector.file.mule.default.dispatcher.02] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.705310198'. Object is: FileMessageDispatcher
 2020-05-20 10:09:49,497 [[helloworld].connector.file.mule.default.dispatcher.02] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\gitrepo\qt-mule\helloworld\docs\Akbar_JAVA_Profile.doc
 2020-05-20 10:09:49,499 [[helloworld].connector.file.mule.default.dispatcher.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\gitrepo\qt-mule\helloworld\docs\sharath mule.docx
+2020-05-29 09:49:35,350 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'helloworld'                            +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 09:49:35,902 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-29 09:49:35,922 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-29 09:49:36,198 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-29 09:49:36,452 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-29 09:49:36,452 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-29 09:49:36,916 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5ae76500: startup date [Fri May 29 09:49:36 IST 2020]; root of context hierarchy
+2020-05-29 09:49:41,212 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-29 09:49:42,945 [main] WARN  org.springframework.beans.GenericTypeAwarePropertyDescriptor - Invalid JavaBean property 'port' being accessed! Ambiguous write methods found next to actually used [public void org.mule.endpoint.URIBuilder.setPort(java.lang.String)]: [public void org.mule.endpoint.URIBuilder.setPort(int)]
+2020-05-29 09:49:43,924 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-29 09:49:44,695 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\helloworld\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\helloworld\queue-tx-log\tx2.log
+2020-05-29 09:49:44,713 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\helloworld\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\helloworld\queue-xa-tx-log\tx2.log
+2020-05-29 09:49:44,723 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-05-29 09:49:44,809 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.ftp.mule.default
+2020-05-29 09:49:45,134 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-29 09:49:45,143 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: braodcastingdemoFlow
+2020-05-29 09:49:45,145 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@74024f3
+2020-05-29 09:49:45,195 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: braodcastingdemoFlow.stage1
+2020-05-29 09:49:45,239 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: choicedemoFlow
+2020-05-29 09:49:45,239 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@67cffead
+2020-05-29 09:49:45,254 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: choicedemoFlow.stage1
+2020-05-29 09:49:45,257 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: filecopyFlow
+2020-05-29 09:49:45,258 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@49e2b3c5
+2020-05-29 09:49:45,274 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: filecopyFlow.stage1
+2020-05-29 09:49:45,282 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: ftpdemoFlow
+2020-05-29 09:49:45,284 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@28e0e464
+2020-05-29 09:49:45,294 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: ftpdemoFlow.stage1
+2020-05-29 09:49:45,300 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: helloworldFlow
+2020-05-29 09:49:45,304 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1de4285e
+2020-05-29 09:49:45,345 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: helloworldFlow.stage1
+2020-05-29 09:49:45,349 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: httpfilereaderFlow
+2020-05-29 09:49:45,349 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@ca8ef3a
+2020-05-29 09:49:45,358 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: httpfilereaderFlow.stage1
+2020-05-29 09:49:46,055 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\braodcastingdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\choicedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\filecopy.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\ftpdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\helloworld.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\httpfilereader.xml'}]"
+2020-05-29 09:49:46,057 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\braodcastingdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\choicedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\filecopy.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\ftpdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\helloworld.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\helloworld\httpfilereader.xml'}]"
+2020-05-29 09:49:46,071 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-29 09:49:46,071 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'helloworld'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 09:49:46,091 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-29 09:49:46,092 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-29 09:49:46,165 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:9999/mule
+2020-05-29 09:49:46,173 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=405b6d75
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-29 09:49:46,173 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=405b6d75
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-29 09:49:46,175 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-05-29 09:49:46,180 [main] INFO  com.mulesoft.mule.transport.ftp.EEFtpConnector - Connected: EEFtpConnector
+{
+  name=connector.ftp.mule.default
+  lifecycle=initialise
+  this=f8a6243
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[ftp]
+  serviceOverrides=<none>
+}
+
+2020-05-29 09:49:46,181 [main] INFO  com.mulesoft.mule.transport.ftp.EEFtpConnector - Starting: EEFtpConnector
+{
+  name=connector.ftp.mule.default
+  lifecycle=initialise
+  this=f8a6243
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[ftp]
+  serviceOverrides=<none>
+}
+
+2020-05-29 09:49:46,182 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.ftp.mule.default
+2020-05-29 09:49:46,192 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-29 09:49:46,194 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: braodcastingdemoFlow
+2020-05-29 09:49:46,196 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: braodcastingdemoFlow.stage1
+2020-05-29 09:49:46,209 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: choicedemoFlow
+2020-05-29 09:49:46,209 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: choicedemoFlow.stage1
+2020-05-29 09:49:46,213 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: filecopyFlow
+2020-05-29 09:49:46,213 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: filecopyFlow.stage1
+2020-05-29 09:49:46,219 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: ftpdemoFlow
+2020-05-29 09:49:46,219 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: ftpdemoFlow.stage1
+2020-05-29 09:49:46,232 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: helloworldFlow
+2020-05-29 09:49:46,232 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: helloworldFlow.stage1
+2020-05-29 09:49:46,243 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: httpfilereaderFlow
+2020-05-29 09:49:46,243 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: httpfilereaderFlow.stage1
+2020-05-29 09:49:46,351 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: braodcastingdemoFlow on endpointUri: file://broadcast-inbox
+2020-05-29 09:49:46,436 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2020-05-29 09:49:46,443 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2020-05-29 09:49:46,444 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2020-05-29 09:49:46,444 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2020-05-29 09:49:46,448 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: choicedemoFlow on endpointUri: file://inbox
+2020-05-29 09:49:46,452 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2020-05-29 09:49:46,453 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2020-05-29 09:49:46,453 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2020-05-29 09:49:46,453 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2020-05-29 09:49:46,454 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: filecopyFlow on endpointUri: file:///E:/inbox/
+2020-05-29 09:49:46,457 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2020-05-29 09:49:46,458 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2020-05-29 09:49:46,459 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2020-05-29 09:49:46,459 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2020-05-29 09:49:46,459 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: ftpdemoFlow on endpointUri: file://ftpinbox
+2020-05-29 09:49:46,469 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2020-05-29 09:49:46,470 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2020-05-29 09:49:46,473 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2020-05-29 09:49:46,473 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2020-05-29 09:49:46,498 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-29 09:49:55,565 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.helloworld:type=Endpoint,service="ftpdemoFlow",connector=connector.file.mule.default,name="endpoint.file.ftpinbox"
+2020-05-29 09:49:55,566 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.helloworld:type=Endpoint,service="ftpdemoFlow",connector=connector.file.mule.default,name="endpoint.file.ftpinbox"
+2020-05-29 09:49:55,566 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.helloworld:type=Endpoint,service="braodcastingdemoFlow",connector=connector.file.mule.default,name="endpoint.file.broadcast.inbox"
+2020-05-29 09:49:55,566 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.helloworld:type=Endpoint,service="braodcastingdemoFlow",connector=connector.file.mule.default,name="endpoint.file.broadcast.inbox"
+2020-05-29 09:49:55,566 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.helloworld:type=Endpoint,service="filecopyFlow",connector=connector.file.mule.default,name="endpoint..E.inbox"
+2020-05-29 09:49:55,567 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.helloworld:type=Endpoint,service="filecopyFlow",connector=connector.file.mule.default,name="endpoint..E.inbox"
+2020-05-29 09:49:55,567 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.helloworld:type=Endpoint,service="choicedemoFlow",connector=connector.file.mule.default,name="endpoint.file.inbox"
+2020-05-29 09:49:55,567 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.helloworld:type=Endpoint,service="choicedemoFlow",connector=connector.file.mule.default,name="endpoint.file.inbox"
+2020-05-29 09:49:55,569 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.helloworld:type=Connector,name="connector.file.mule.default"
+2020-05-29 09:49:55,570 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.helloworld:type=Connector,name="connector.ftp.mule.default"
+2020-05-29 09:49:55,575 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: helloworld                                            *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
