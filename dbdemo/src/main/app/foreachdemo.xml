@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+    <flow name="foreachdemoFlow">
+        <file:inbound-endpoint path="statging" responseTimeout="10000" doc:name="File"/>
+        <dw:transform-message doc:name="Transform Message" metadata:id="33819d9c-84ad-43e7-9e87-c66f70c39996">
+            <dw:input-payload doc:sample="C:\Users\LENOVO\Desktop\mockdata.csv" mimeType="application/csv"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+payload]]></dw:set-payload>
+        </dw:transform-message>
+        <foreach doc:name="For Each">
+            <logger message="inside for each scope #[payload]" level="INFO" doc:name="Logger"/>
+            <db:insert config-ref="MySQL_Configuration" doc:name="Database">
+                <db:parameterized-query><![CDATA[insert into emp(name,gender)values(#[payload.name],#[payload.gender])]]></db:parameterized-query>
+            </db:insert>
+        </foreach>
+        <logger message="after process comletion!" level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>

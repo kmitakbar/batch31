@@ -1,0 +1,16 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "accounts-response-mockdata"
+        }
+    },
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "gpay-response"
+        }
+    },
+    "id": "64b1ae82-b08a-499a-acf2-46bab2561b6b",
+    "version": "5.2.0.0"
+}

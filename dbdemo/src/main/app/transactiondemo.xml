@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
+    <flow name="transactiondemoFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/transfer" doc:name="HTTP"/>
+        <logger message="requet payload #[payload]" level="INFO" doc:name="Logger"/>
+        <transactional action="ALWAYS_BEGIN" doc:name="Transactional">
+            <db:bulk-execute config-ref="MySQL_Configuration" doc:name="Database"><![CDATA[update accounts set amount=(amount)-(#[json:amount]) where ac_number=#[json:from_ac];
+update accounts set amount=(amount)+(#[json:amount]) where ac_number1=#[json:to_ac]]]></db:bulk-execute>
+        </transactional>
+        <set-payload value="Amount transferred successfully!" doc:name="Set Payload"/>
+    </flow>
+</mule>

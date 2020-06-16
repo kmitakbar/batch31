@@ -1,0 +1,10 @@
+[
+    {
+        "customerID": 100000,
+        "customerName": "Akbar",
+        "mobile": "1234567",
+        "emailAddress": "akbarmd@gmail.com",
+        "bank": "HDFC",
+        "amount":89.00
+    }
+]

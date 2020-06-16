@@ -1,0 +1,9 @@
+[
+    {
+        "accoundNumber": 1000000,
+        "accountHolderName": "Tester",
+        "phone": "123",
+        "email": "akbarmd@gmail.com",
+        "amount":67.00
+    }
+]

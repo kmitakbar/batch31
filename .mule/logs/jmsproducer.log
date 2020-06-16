@@ -1,0 +1,369 @@
+2020-06-10 10:30:41,245 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'jmsproducer'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-10 10:30:41,757 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-06-10 10:30:41,775 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-10 10:30:42,036 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-10 10:30:42,341 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-10 10:30:42,343 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-10 10:30:42,809 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@22c86919: startup date [Wed Jun 10 10:30:42 IST 2020]; root of context hierarchy
+2020-06-10 10:30:45,556 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-10 10:30:47,409 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-06-10 10:30:48,203 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-tx-log\tx2.log
+2020-06-10 10:30:48,237 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-xa-tx-log\tx2.log
+2020-06-10 10:30:48,248 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2020-06-10 10:30:48,709 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-10 10:30:48,714 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: jmsproducerFlow
+2020-06-10 10:30:48,715 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@152c4495
+2020-06-10 10:30:48,763 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: jmsproducerFlow.stage1
+2020-06-10 10:30:49,192 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\jmsproducer\jmsproducer.xml'}]"
+2020-06-10 10:30:49,194 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\jmsproducer\jmsproducer.xml'}]"
+2020-06-10 10:30:49,201 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-06-10 10:30:49,202 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'jmsproducer'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-10 10:30:49,219 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-10 10:30:49,220 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-10 10:30:49,264 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/jms
+2020-06-10 10:30:49,927 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=42383cb0
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-06-10 10:30:49,927 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=42383cb0
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-06-10 10:30:49,928 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2020-06-10 10:30:49,936 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-10 10:30:49,937 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: jmsproducerFlow
+2020-06-10 10:30:49,938 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: jmsproducerFlow.stage1
+2020-06-10 10:30:49,996 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-10 10:30:59,028 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.jmsproducer:type=Connector,name="Active_MQ"
+2020-06-10 10:30:59,033 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: jmsproducer                                           *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-10 10:31:36,959 [[jmsproducer].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2020-06-10 10:31:36,963 [[jmsproducer].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2020-06-10 10:31:36,965 [[jmsproducer].HTTP_Listener_Configuration.worker.01] WARN  com.mulesoft.mule.transport.jms.EeJmsMessageDispatcher - Starting patched JmsMessageReceiver
+2020-06-10 10:31:36,966 [[jmsproducer].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Active_MQ.dispatcher.1326683008'. Object is: EeJmsMessageDispatcher
+2020-06-10 10:31:36,979 [[jmsproducer].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Active_MQ.dispatcher.1326683008'. Object is: EeJmsMessageDispatcher
+2020-06-10 10:36:28,088 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'jmsproducer'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-10 10:36:28,096 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-06-10 10:36:28,100 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-10 10:36:28,109 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-10 10:36:28,138 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-10 10:36:28,138 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-10 10:36:28,146 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5e9bbd9d: startup date [Wed Jun 10 10:36:28 IST 2020]; root of context hierarchy
+2020-06-10 10:36:28,881 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-10 10:36:29,282 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-tx-log\tx2.log
+2020-06-10 10:36:29,284 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-xa-tx-log\tx2.log
+2020-06-10 10:36:29,287 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2020-06-10 10:36:29,323 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-10 10:36:29,326 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: jmsproducerFlow
+2020-06-10 10:36:29,327 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@634e1b39
+2020-06-10 10:36:29,352 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: jmsproducerFlow.stage1
+2020-06-10 10:36:29,424 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\jmsproducer\jmsproducer.xml'}]"
+2020-06-10 10:36:29,424 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\jmsproducer\jmsproducer.xml'}]"
+2020-06-10 10:36:29,454 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'jmsproducer'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-10 10:36:29,468 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-10 10:36:29,470 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-10 10:36:29,514 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/jms
+2020-06-10 10:36:30,131 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=25ce435
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-06-10 10:36:30,131 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=25ce435
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-06-10 10:36:30,131 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2020-06-10 10:36:30,136 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-10 10:36:30,137 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: jmsproducerFlow
+2020-06-10 10:36:30,137 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: jmsproducerFlow.stage1
+2020-06-10 10:36:30,153 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-10 10:36:30,157 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.jmsproducer:type=Connector,name="Active_MQ"
+2020-06-10 10:36:30,159 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: jmsproducer                                           *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-10 10:46:25,481 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'jmsproducer'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-10 10:46:25,484 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: jmsproducerFlow
+2020-06-10 10:46:25,485 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: jmsproducerFlow.stage1
+2020-06-10 10:46:25,600 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-06-10 10:46:25,604 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Active_MQ
+2020-06-10 10:46:25,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/jms
+2020-06-10 10:46:25,644 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-06-10 10:46:25,644 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-06-10 10:46:25,726 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'jmsproducer'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-10 10:46:25,727 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-06-10 10:46:25,728 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: jmsproducerFlow
+2020-06-10 10:46:25,728 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: jmsproducerFlow.stage1
+2020-06-10 10:46:25,733 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-06-10 10:46:25,772 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=25ce435
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-06-10 10:46:25,774 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: Active_MQ
+2020-06-10 10:46:25,963 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@5e9bbd9d: startup date [Wed Jun 10 10:36:28 IST 2020]; root of context hierarchy
+2020-06-10 10:46:26,008 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "jmsproducer" shut down normally on: 10/6/20 10:46 AM  *
+* Up for: 0 days, 0 hours, 9 mins, 56.547 sec                        *
+**********************************************************************
+2020-06-10 10:46:26,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'jmsproducer'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-10 10:46:26,185 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-06-10 10:46:26,201 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-10 10:46:26,223 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-10 10:46:26,266 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-10 10:46:26,269 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-10 10:46:26,277 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5442e701: startup date [Wed Jun 10 10:46:26 IST 2020]; root of context hierarchy
+2020-06-10 10:46:27,361 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-10 10:46:27,819 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-tx-log\tx2.log
+2020-06-10 10:46:27,823 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-xa-tx-log\tx2.log
+2020-06-10 10:46:27,829 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2020-06-10 10:46:27,904 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-10 10:46:27,922 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: jmsproducerFlow
+2020-06-10 10:46:27,925 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7956f874
+2020-06-10 10:46:27,949 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: jmsproducerFlow.stage1
+2020-06-10 10:46:28,007 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\jmsproducer\jmsproducer.xml'}]"
+2020-06-10 10:46:28,007 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\jmsproducer\jmsproducer.xml'}]"
+2020-06-10 10:46:28,009 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'jmsproducer'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-10 10:46:28,014 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-10 10:46:28,014 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-10 10:46:28,031 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/jms
+2020-06-10 10:46:28,698 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=7e18019d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-06-10 10:46:28,698 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=7e18019d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-06-10 10:46:28,698 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2020-06-10 10:46:28,707 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-10 10:46:28,709 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: jmsproducerFlow
+2020-06-10 10:46:28,709 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: jmsproducerFlow.stage1
+2020-06-10 10:46:28,733 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-10 10:46:28,751 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.jmsproducer:type=Connector,name="Active_MQ"
+2020-06-10 10:46:28,752 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: jmsproducer                                           *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-10 15:18:28,638 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@50395] ERROR org.mule.exception.DefaultSystemExceptionStrategy - 
+********************************************************************************
+Message               : Connection reset (javax.jms.JMSException)
+JMS Code              : null
+Element               : /Active_MQ @ app:jmsproducer.xml:11 (Active MQ)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.fill(TcpBufferedInputStream.java:50)
+	at org.apache.activemq.transport.tcp.TcpTransport$2.fill(TcpTransport.java:634)
+	at org.apache.activemq.transport.tcp.TcpBufferedInputStream.read(TcpBufferedInputStream.java:59)
+	at org.apache.activemq.transport.tcp.TcpTransport$2.read(TcpTransport.java:619)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.activemq.openwire.OpenWireFormat.unmarshal(OpenWireFormat.java:268)
+	at org.apache.activemq.transport.tcp.TcpTransport.readCommand(TcpTransport.java:240)
+	at org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:232)
+	at org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2020-06-10 15:18:28,694 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@50395] INFO  org.mule.exception.DefaultSystemExceptionStrategy - Exception caught is a ConnectException, attempting to reconnect...
+2020-06-10 15:18:28,694 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@50395] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: Active_MQ
+2020-06-10 15:18:29,139 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@50395] WARN  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Exception closing JMS connection: Disposed due to prior exception
+2020-06-10 15:18:29,139 [ActiveMQ Connection Executor: tcp://localhost/127.0.0.1:61616@50395] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Disconnected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=7e18019d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-06-10 15:18:30,144 [[jmsproducer].Mule.02] ERROR org.mule.retry.notifiers.ConnectNotifier - Failed to connect/reconnect: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=stop
+  this=7e18019d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=false
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+. Root Exception was: Connection refused: connect. Type: class java.net.ConnectException
+2020-06-10 15:18:30,152 [[jmsproducer].Mule.02] ERROR org.mule.exception.DefaultSystemExceptionStrategy - Could not connect to broker URL: tcp://localhost:61616. Reason: java.net.ConnectException: Connection refused: connect
+2020-06-12 09:37:48,199 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'jmsproducer'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-12 09:37:48,210 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-06-12 09:37:48,213 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-12 09:37:48,219 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-12 09:37:48,247 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-12 09:37:48,247 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-12 09:37:48,256 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2de6f1bc: startup date [Fri Jun 12 09:37:48 IST 2020]; root of context hierarchy
+2020-06-12 09:37:48,983 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-12 09:37:49,441 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-tx-log\tx2.log
+2020-06-12 09:37:49,446 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\jmsproducer\queue-xa-tx-log\tx2.log
+2020-06-12 09:37:49,450 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2020-06-12 09:37:49,488 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-12 09:37:49,490 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: jmsproducerFlow
+2020-06-12 09:37:49,491 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6dae70f9
+2020-06-12 09:37:49,521 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: jmsproducerFlow.stage1
+2020-06-12 09:37:49,570 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\jmsproducer\jmsproducer.xml'}]"
+2020-06-12 09:37:49,572 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\jmsproducer\jmsproducer.xml'}]"
+2020-06-12 09:37:49,582 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'jmsproducer'                               +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-12 09:37:49,591 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-12 09:37:49,592 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-12 09:37:49,666 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/jms
+2020-06-12 09:37:50,366 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=19cdc217
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-06-12 09:37:50,366 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=19cdc217
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-06-12 09:37:50,366 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2020-06-12 09:37:50,374 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-12 09:37:50,378 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: jmsproducerFlow
+2020-06-12 09:37:50,378 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: jmsproducerFlow.stage1
+2020-06-12 09:37:50,419 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-12 09:37:50,429 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.jmsproducer:type=Connector,name="Active_MQ"
+2020-06-12 09:37:50,432 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: jmsproducer                                           *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-12 09:42:56,117 [[jmsproducer].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default outbound transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2020-06-12 09:42:56,117 [[jmsproducer].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.service.DefaultTransportServiceDescriptor - Loading default response transformer: org.mule.transport.jms.transformers.ObjectToJMSMessage
+2020-06-12 09:42:56,118 [[jmsproducer].HTTP_Listener_Configuration.worker.01] WARN  com.mulesoft.mule.transport.jms.EeJmsMessageDispatcher - Starting patched JmsMessageReceiver
+2020-06-12 09:42:56,119 [[jmsproducer].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'Active_MQ.dispatcher.1136708853'. Object is: EeJmsMessageDispatcher
+2020-06-12 09:42:56,119 [[jmsproducer].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'Active_MQ.dispatcher.1136708853'. Object is: EeJmsMessageDispatcher

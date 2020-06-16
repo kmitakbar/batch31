@@ -1,0 +1,22 @@
+{
+    "inputMessageMetadata": {
+        "flowVariables": {
+            "accounts_results": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "accounts-response-mockdata"
+            },
+            "customer_api_response": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "customer-mock-response"
+            },
+            "accounts_response": {
+                "connectorName": "#_custom_mule_metadata_type_#",
+                "typeId": "accounts-response-mockdata"
+            },
+            "customer_response": {}
+        }
+    },
+    "outputMessageMetadata": {},
+    "id": "e4462418-2450-453d-9be3-583e51a7fd01",
+    "version": "5.2.0.0"
+}

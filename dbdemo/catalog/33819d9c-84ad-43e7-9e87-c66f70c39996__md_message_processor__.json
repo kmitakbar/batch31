@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "#_custom_mule_metadata_type_#",
+            "typeId": "empmock"
+        }
+    },
+    "outputMessageMetadata": {},
+    "id": "33819d9c-84ad-43e7-9e87-c66f70c39996",
+    "version": "5.2.0.0"
+}
