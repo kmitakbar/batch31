@@ -1,0 +1,55 @@
+#%RAML 0.8
+title: customer-api
+baseUri: http://localhost:8888/api/v1/customer
+/getAll:
+  get: 
+    description: This end point is used to get All the list of ocustomers
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example: |
+              [
+                {
+                  "cusotmerId":1000,
+                  "name":"Test",
+                  "gender":"male",
+                  "age":100
+                }
+              ]
+/getById:
+  get: 
+    description: This end point is used to get All the list of ocustomers
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example: |
+                {
+                  "cusotmerId":1000,
+                  "name":"Test",
+                  "gender":"male",
+                  "age":100
+                }
+/createcustomer: 
+  post: 
+    description: This end point used to create new customer
+    body: 
+      application/json: 
+        example: |
+          {
+              "name":"Demo",
+              "age":20,
+              "gender":"male"
+          }
+    responses: 
+      200: 
+        body: 
+          application/json: 
+            example: |
+              {
+                "customerId":67,
+                "name":"Demo",
+                "age":20,
+                "gender":"male"
+              }
