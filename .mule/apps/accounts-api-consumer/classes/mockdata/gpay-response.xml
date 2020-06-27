@@ -1,0 +1,7 @@
+<customers>
+	<customer>
+		<cid>1000</cid>
+		<name>Demo</name>
+		<email>demo@gmail.com</email>
+	</customer>
+</customers>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+    <sub-flow name="accounts_subflowSub_Flow">
+        <http:request config-ref="account_API" path="accounts" method="GET" doc:name="account_api_call"/>
+        <flow-ref name="audit_asyncFlow" doc:name="Flow Reference"/>
+        <byte-array-to-object-transformer doc:name="transformer"/>
+        <set-variable variableName="accounts_results" value="#[payload]" doc:name="accounts_results"/>
+    </sub-flow>
+</mule>

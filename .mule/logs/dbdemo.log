@@ -5998,3 +5998,720 @@ java.lang.IllegalArgumentException: Object "org.mule.transport.file.ReceiverFile
 2020-06-08 11:12:15,023 [[dbdemo].foreachdemoFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - inside for each scope {name=test, gender=male}
 2020-06-08 11:12:15,052 [[dbdemo].foreachdemoFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - inside for each scope {name=test, gender=male}
 2020-06-08 11:12:15,101 [[dbdemo].foreachdemoFlow.stage1.02] INFO  org.mule.api.processor.LoggerMessageProcessor - after process comletion!
+2020-06-20 09:44:13,038 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'dbdemo'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:44:13,587 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-06-20 09:44:13,611 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-20 09:44:13,862 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-20 09:44:14,180 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-20 09:44:14,180 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-20 09:44:14,695 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@24f360b2: startup date [Sat Jun 20 09:44:14 IST 2020]; root of context hierarchy
+2020-06-20 09:44:19,963 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-20 09:44:24,050 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-06-20 09:44:25,039 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-tx-log\tx2.log
+2020-06-20 09:44:25,063 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-xa-tx-log\tx2.log
+2020-06-20 09:44:25,069 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-06-20 09:44:25,358 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-20 09:44:25,386 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: bulkmodeFlow
+2020-06-20 09:44:25,389 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4d0cc83e
+2020-06-20 09:44:25,488 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: bulkmodeFlow.stage1
+2020-06-20 09:44:25,986 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: dbdemoFlow
+2020-06-20 09:44:25,986 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1d289d3f
+2020-06-20 09:44:25,992 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: dbdemoFlow.stage1
+2020-06-20 09:44:25,992 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: deletedemoFlow
+2020-06-20 09:44:25,992 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5ec88f9e
+2020-06-20 09:44:25,998 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: deletedemoFlow.stage1
+2020-06-20 09:44:26,001 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: empsaveFlow
+2020-06-20 09:44:26,001 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@26be9a6
+2020-06-20 09:44:26,009 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: empsaveFlow.stage1
+2020-06-20 09:44:26,010 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: foreachdemoFlow
+2020-06-20 09:44:26,011 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@118041c7
+2020-06-20 09:44:26,017 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: foreachdemoFlow.stage1
+2020-06-20 09:44:26,025 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: transactiondemoFlow
+2020-06-20 09:44:26,025 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3e856100
+2020-06-20 09:44:26,037 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: transactiondemoFlow.stage1
+2020-06-20 09:44:26,038 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5287ba5f
+2020-06-20 09:44:26,257 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\bulkmode.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\dbdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\deletedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\empsave.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\foreachdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\transactiondemo.xml'}]"
+2020-06-20 09:44:26,260 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\bulkmode.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\dbdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\deletedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\empsave.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\foreachdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\transactiondemo.xml'}]"
+2020-06-20 09:44:26,277 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-06-20 09:44:26,278 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'dbdemo'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:44:26,305 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-20 09:44:26,305 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-20 09:44:26,380 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/db
+2020-06-20 09:44:26,386 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=5f61371d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-06-20 09:44:26,386 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=5f61371d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-06-20 09:44:26,396 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-06-20 09:44:26,420 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-20 09:44:26,424 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: bulkmodeFlow
+2020-06-20 09:44:26,427 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: bulkmodeFlow.stage1
+2020-06-20 09:44:26,437 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: dbdemoFlow
+2020-06-20 09:44:26,437 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: dbdemoFlow.stage1
+2020-06-20 09:44:26,444 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: deletedemoFlow
+2020-06-20 09:44:26,444 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: deletedemoFlow.stage1
+2020-06-20 09:44:26,454 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: empsaveFlow
+2020-06-20 09:44:26,454 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: empsaveFlow.stage1
+2020-06-20 09:44:26,466 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: foreachdemoFlow
+2020-06-20 09:44:26,466 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: foreachdemoFlow.stage1
+2020-06-20 09:44:26,471 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: transactiondemoFlow
+2020-06-20 09:44:26,472 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: transactiondemoFlow.stage1
+2020-06-20 09:44:26,584 [main] INFO  org.mule.transport.file.FileConnector - Registering listener: foreachdemoFlow on endpointUri: file://statging
+2020-06-20 09:44:26,675 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:44:26,684 [main] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2020-06-20 09:44:26,686 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:44:26,686 [main] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2020-06-20 09:44:26,714 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-20 09:44:47,850 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.dbdemo:type=Endpoint,service="foreachdemoFlow",connector=connector.file.mule.default,name="endpoint.file.statging"
+2020-06-20 09:44:47,852 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.dbdemo:type=Endpoint,service="foreachdemoFlow",connector=connector.file.mule.default,name="endpoint.file.statging"
+2020-06-20 09:44:47,854 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.dbdemo:type=Connector,name="connector.file.mule.default"
+2020-06-20 09:44:47,876 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: dbdemo                                                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-20 09:46:02,998 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'dbdemo'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:46:03,019 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: bulkmodeFlow
+2020-06-20 09:46:03,020 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: bulkmodeFlow.stage1
+2020-06-20 09:46:03,117 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: dbdemoFlow
+2020-06-20 09:46:03,117 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: dbdemoFlow.stage1
+2020-06-20 09:46:03,317 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: deletedemoFlow
+2020-06-20 09:46:03,317 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: deletedemoFlow.stage1
+2020-06-20 09:46:03,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: empsaveFlow
+2020-06-20 09:46:03,517 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: empsaveFlow.stage1
+2020-06-20 09:46:03,717 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: foreachdemoFlow
+2020-06-20 09:46:03,717 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file://statging
+2020-06-20 09:46:03,719 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:46:03,720 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:46:03,720 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: foreachdemoFlow.stage1
+2020-06-20 09:46:03,917 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: transactiondemoFlow
+2020-06-20 09:46:03,918 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: transactiondemoFlow.stage1
+2020-06-20 09:46:04,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-06-20 09:46:04,127 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2020-06-20 09:46:04,167 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/db
+2020-06-20 09:46:04,169 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-06-20 09:46:04,170 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-06-20 09:46:04,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'dbdemo'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:46:04,179 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-06-20 09:46:04,183 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: bulkmodeFlow
+2020-06-20 09:46:04,186 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: bulkmodeFlow.stage1
+2020-06-20 09:46:04,189 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: dbdemoFlow
+2020-06-20 09:46:04,189 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: dbdemoFlow.stage1
+2020-06-20 09:46:04,190 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: deletedemoFlow
+2020-06-20 09:46:04,190 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: deletedemoFlow.stage1
+2020-06-20 09:46:04,191 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: empsaveFlow
+2020-06-20 09:46:04,191 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: empsaveFlow.stage1
+2020-06-20 09:46:04,191 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: foreachdemoFlow
+2020-06-20 09:46:04,191 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: foreachdemoFlow.stage1
+2020-06-20 09:46:04,192 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: transactiondemoFlow
+2020-06-20 09:46:04,192 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: transactiondemoFlow.stage1
+2020-06-20 09:46:04,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-06-20 09:46:04,198 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=5f61371d
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-06-20 09:46:04,200 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2020-06-20 09:46:04,426 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@24f360b2: startup date [Sat Jun 20 09:44:14 IST 2020]; root of context hierarchy
+2020-06-20 09:46:04,474 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "dbdemo" shut down normally on: 20/6/20 9:46 AM        *
+* Up for: 0 days, 0 hours, 1 mins, 38.192 sec                        *
+**********************************************************************
+2020-06-20 09:46:04,839 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'dbdemo'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:46:04,863 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-06-20 09:46:04,868 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-20 09:46:04,876 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-20 09:46:04,897 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-20 09:46:04,897 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-20 09:46:04,902 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7ae013eb: startup date [Sat Jun 20 09:46:04 IST 2020]; root of context hierarchy
+2020-06-20 09:46:07,254 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-20 09:46:07,844 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-tx-log\tx2.log
+2020-06-20 09:46:07,845 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-xa-tx-log\tx2.log
+2020-06-20 09:46:07,847 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-06-20 09:46:07,932 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-20 09:46:07,938 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: bulkmodeFlow
+2020-06-20 09:46:07,939 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@59e80a11
+2020-06-20 09:46:07,950 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: bulkmodeFlow.stage1
+2020-06-20 09:46:07,950 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: dbdemoFlow
+2020-06-20 09:46:07,950 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6f32a734
+2020-06-20 09:46:07,957 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: dbdemoFlow.stage1
+2020-06-20 09:46:07,957 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: deletedemoFlow
+2020-06-20 09:46:07,957 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3cfb366a
+2020-06-20 09:46:07,962 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: deletedemoFlow.stage1
+2020-06-20 09:46:07,963 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: empsaveFlow
+2020-06-20 09:46:07,964 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3bb48e97
+2020-06-20 09:46:07,973 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: empsaveFlow.stage1
+2020-06-20 09:46:07,975 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: foreachdemoFlow
+2020-06-20 09:46:07,976 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@66c0bd28
+2020-06-20 09:46:07,986 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: foreachdemoFlow.stage1
+2020-06-20 09:46:07,988 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: transactiondemoFlow
+2020-06-20 09:46:07,988 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2d0d45e2
+2020-06-20 09:46:07,995 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: transactiondemoFlow.stage1
+2020-06-20 09:46:07,996 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@29b9912f
+2020-06-20 09:46:08,039 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\bulkmode.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\dbdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\deletedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\empsave.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\foreachdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\transactiondemo.xml'}]"
+2020-06-20 09:46:08,040 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\bulkmode.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\dbdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\deletedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\empsave.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\foreachdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\transactiondemo.xml'}]"
+2020-06-20 09:46:08,061 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'dbdemo'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:46:08,089 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-20 09:46:08,089 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-20 09:46:08,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/db
+2020-06-20 09:46:08,109 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=55787582
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-06-20 09:46:08,110 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=55787582
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-06-20 09:46:08,110 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-06-20 09:46:08,138 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-20 09:46:08,140 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: bulkmodeFlow
+2020-06-20 09:46:08,140 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: bulkmodeFlow.stage1
+2020-06-20 09:46:08,143 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: dbdemoFlow
+2020-06-20 09:46:08,144 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: dbdemoFlow.stage1
+2020-06-20 09:46:08,147 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: deletedemoFlow
+2020-06-20 09:46:08,147 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: deletedemoFlow.stage1
+2020-06-20 09:46:08,149 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: empsaveFlow
+2020-06-20 09:46:08,150 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: empsaveFlow.stage1
+2020-06-20 09:46:08,153 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: foreachdemoFlow
+2020-06-20 09:46:08,153 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: foreachdemoFlow.stage1
+2020-06-20 09:46:08,156 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: transactiondemoFlow
+2020-06-20 09:46:08,156 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: transactiondemoFlow.stage1
+2020-06-20 09:46:08,192 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: foreachdemoFlow on endpointUri: file://statging
+2020-06-20 09:46:08,197 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:46:08,201 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2020-06-20 09:46:08,244 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:46:08,295 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2020-06-20 09:46:08,346 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-20 09:46:08,398 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.dbdemo:type=Endpoint,service="foreachdemoFlow",connector=connector.file.mule.default,name="endpoint.file.statging"
+2020-06-20 09:46:08,400 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.dbdemo:type=Endpoint,service="foreachdemoFlow",connector=connector.file.mule.default,name="endpoint.file.statging"
+2020-06-20 09:46:08,401 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.dbdemo:type=Connector,name="connector.file.mule.default"
+2020-06-20 09:46:08,415 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: dbdemo                                                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-20 09:46:12,436 [[dbdemo].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2020-06-20 09:46:15,476 [[dbdemo].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Exception while executing: 
+payload filter $.gender
+               ^
+Cannot coerce a :string to a :boolean, caused by :Cannot convert "male" to a boolean.
+Payload               : [{gender=male, empId=1, name=akbar}, {gender=female, empId=2, name=renuka}, {gender=female, empId=3, name=sanaa}, {gender=male, empId=4, name=test}, {gender=male, empId=5, name=test1}, {gender=male, empId=6, name=test2}, {gender=male, empId=7, name=test3}, {gender=male, empId=8, name=test}, {gender=male, empId=9, name=test1}, {gender=male, empId=10, name=test2}, {gender=male, empId=11, name=test3}, {gender=male, empId=12, name=test}, {gender=male, empId=13, name=test1}, {gender=male, empId=14, name=test2}, {gender=male, empId=15, name=test3}, {gender=male, empId=16, name=test}, {gender=male, empId=17, name=test}, {gender=male, empId=18, name=test}, {gender=male, empId=19, name=test}, {gender=male, empId=20, name=test}, {gender=male, empId=21, name=test}, {gender=male, empId=22, name=test}, {gender=male, empId=23, name=test}, {gender=male, empId=24, name=test}, {gender=male, empId=25, name=test}, {gender=male, empId=26, name=test}, {gender=male, empId=27, name=test}, {gender=male, empId=28, name=test}, {gender=male, empId=29, name=test}, {gender=male, empId=30, name=test}, {gender=male, empId=31, name=test}, {gender=male, empId=32, name=test}, {gender=male, empId=33, name=test}, {gender=male, empId=34, name=test}, {gender=male, empId=35, name=test}, {gender=male, empId=36, name=test}, {gender=male, empId=37, name=test}, {gender=male, empId=38, name=test}, {gender=male, empId=39, name=test}, {gender=male, empId=40, name=test}, {gender=male, empId=41, name=test}, {gender=male, empId=42, name=test}, {gender=male, empId=43, name=test}, {gender=male, empId=44, name=test}, {gender=male, empId=45, name=test}, {gender=male, empId=46, name=test}, {gender=male, empId=47, name=test}, {gender=male, empId=48, name=test}, {gender=male, empId=49, name=test}, {gender=male, empId=50, name=test} [..]]
+Payload Type          : java.util.LinkedList
+Element               : /dbdemoFlow/processors/1 @ dbdemo:dbdemo.xml:19 (Transform Message)
+Element XML           : <dw:transform-message doc:name="Transform Message">
+                        <dw:set-payload>%dw 1.0
+%output application/json
+---
+payload filter $.gender</dw:set-payload>
+                        </dw:transform-message>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+com.mulesoft.weave.mule.exception.WeaveExecutionException: Exception while executing: 
+payload filter $.gender
+               ^
+Cannot coerce a :string to a :boolean, caused by :Cannot convert "male" to a boolean.
+	at com.mulesoft.weave.mule.exception.WeaveExecutionException$.apply(WeaveExecutionException.scala:10)
+	at com.mulesoft.weave.mule.WeaveMessageProcessor.execute(WeaveMessageProcessor.scala:133)
+	at com.mulesoft.weave.mule.WeaveMessageProcessor.process(WeaveMessageProcessor.scala:72)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.module.db.internal.processor.AbstractDbMessageProcessor.process(AbstractDbMessageProcessor.java:104)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:110)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:62)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:57)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:48)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:232)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:74)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:60)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:36)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:112)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:39)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:137)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:110)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:540)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:126)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:32)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:149)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2020-06-20 09:46:43,449 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'dbdemo'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:46:43,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: bulkmodeFlow
+2020-06-20 09:46:43,455 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: bulkmodeFlow.stage1
+2020-06-20 09:46:43,551 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: dbdemoFlow
+2020-06-20 09:46:43,554 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: dbdemoFlow.stage1
+2020-06-20 09:46:43,751 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: deletedemoFlow
+2020-06-20 09:46:43,751 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: deletedemoFlow.stage1
+2020-06-20 09:46:43,756 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: empsaveFlow
+2020-06-20 09:46:43,756 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: empsaveFlow.stage1
+2020-06-20 09:46:43,951 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: foreachdemoFlow
+2020-06-20 09:46:43,951 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file://statging
+2020-06-20 09:46:43,951 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:46:43,951 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:46:43,952 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: foreachdemoFlow.stage1
+2020-06-20 09:46:43,956 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: transactiondemoFlow
+2020-06-20 09:46:43,956 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: transactiondemoFlow.stage1
+2020-06-20 09:46:44,159 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-06-20 09:46:44,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2020-06-20 09:46:44,168 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/db
+2020-06-20 09:46:44,171 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-06-20 09:46:44,171 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-06-20 09:46:44,175 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'dbdemo'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:46:44,175 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-06-20 09:46:44,176 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: bulkmodeFlow
+2020-06-20 09:46:44,176 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: bulkmodeFlow.stage1
+2020-06-20 09:46:44,176 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: dbdemoFlow
+2020-06-20 09:46:44,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: dbdemoFlow.stage1
+2020-06-20 09:46:44,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: deletedemoFlow
+2020-06-20 09:46:44,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: deletedemoFlow.stage1
+2020-06-20 09:46:44,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: empsaveFlow
+2020-06-20 09:46:44,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: empsaveFlow.stage1
+2020-06-20 09:46:44,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: foreachdemoFlow
+2020-06-20 09:46:44,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: foreachdemoFlow.stage1
+2020-06-20 09:46:44,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: transactiondemoFlow
+2020-06-20 09:46:44,178 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: transactiondemoFlow.stage1
+2020-06-20 09:46:44,179 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-06-20 09:46:44,182 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=55787582
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-06-20 09:46:44,184 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2020-06-20 09:46:44,242 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@7ae013eb: startup date [Sat Jun 20 09:46:04 IST 2020]; root of context hierarchy
+2020-06-20 09:46:44,276 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "dbdemo" shut down normally on: 20/6/20 9:46 AM        *
+* Up for: 0 days, 0 hours, 0 mins, 36.214 sec                        *
+**********************************************************************
+2020-06-20 09:46:44,721 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'dbdemo'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:46:44,766 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-06-20 09:46:44,770 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-20 09:46:44,783 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-20 09:46:44,850 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-20 09:46:44,853 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-20 09:46:44,862 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6e12f004: startup date [Sat Jun 20 09:46:44 IST 2020]; root of context hierarchy
+2020-06-20 09:46:46,879 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-20 09:46:47,422 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-tx-log\tx2.log
+2020-06-20 09:46:47,429 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-xa-tx-log\tx2.log
+2020-06-20 09:46:47,434 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-06-20 09:46:47,556 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-20 09:46:47,570 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: bulkmodeFlow
+2020-06-20 09:46:47,572 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1c520023
+2020-06-20 09:46:47,597 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: bulkmodeFlow.stage1
+2020-06-20 09:46:47,646 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: dbdemoFlow
+2020-06-20 09:46:47,647 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@40780776
+2020-06-20 09:46:47,662 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: dbdemoFlow.stage1
+2020-06-20 09:46:47,664 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: deletedemoFlow
+2020-06-20 09:46:47,665 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@292f7dfa
+2020-06-20 09:46:47,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: deletedemoFlow.stage1
+2020-06-20 09:46:47,675 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: empsaveFlow
+2020-06-20 09:46:47,677 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@27c15ac6
+2020-06-20 09:46:47,685 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: empsaveFlow.stage1
+2020-06-20 09:46:47,686 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: foreachdemoFlow
+2020-06-20 09:46:47,686 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@34bba110
+2020-06-20 09:46:47,693 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: foreachdemoFlow.stage1
+2020-06-20 09:46:47,694 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: transactiondemoFlow
+2020-06-20 09:46:47,695 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3d7350d3
+2020-06-20 09:46:47,710 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: transactiondemoFlow.stage1
+2020-06-20 09:46:47,711 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@66f39cc5
+2020-06-20 09:46:47,766 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\bulkmode.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\dbdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\deletedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\empsave.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\foreachdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\transactiondemo.xml'}]"
+2020-06-20 09:46:47,766 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\bulkmode.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\dbdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\deletedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\empsave.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\foreachdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\transactiondemo.xml'}]"
+2020-06-20 09:46:47,778 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'dbdemo'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:46:47,795 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-20 09:46:47,796 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-20 09:46:47,832 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/db
+2020-06-20 09:46:47,839 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=59285da1
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-06-20 09:46:47,853 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=59285da1
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-06-20 09:46:47,858 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-06-20 09:46:47,915 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-20 09:46:47,920 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: bulkmodeFlow
+2020-06-20 09:46:47,921 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: bulkmodeFlow.stage1
+2020-06-20 09:46:47,952 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: dbdemoFlow
+2020-06-20 09:46:47,959 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: dbdemoFlow.stage1
+2020-06-20 09:46:47,963 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: deletedemoFlow
+2020-06-20 09:46:47,963 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: deletedemoFlow.stage1
+2020-06-20 09:46:47,968 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: empsaveFlow
+2020-06-20 09:46:47,968 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: empsaveFlow.stage1
+2020-06-20 09:46:47,973 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: foreachdemoFlow
+2020-06-20 09:46:47,973 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: foreachdemoFlow.stage1
+2020-06-20 09:46:47,980 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: transactiondemoFlow
+2020-06-20 09:46:47,982 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: transactiondemoFlow.stage1
+2020-06-20 09:46:48,066 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: foreachdemoFlow on endpointUri: file://statging
+2020-06-20 09:46:48,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:46:48,118 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2020-06-20 09:46:48,124 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:46:48,126 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2020-06-20 09:46:48,255 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-20 09:46:48,420 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.dbdemo:type=Endpoint,service="foreachdemoFlow",connector=connector.file.mule.default,name="endpoint.file.statging"
+2020-06-20 09:46:48,421 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.dbdemo:type=Endpoint,service="foreachdemoFlow",connector=connector.file.mule.default,name="endpoint.file.statging"
+2020-06-20 09:46:48,427 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.dbdemo:type=Connector,name="connector.file.mule.default"
+2020-06-20 09:46:48,465 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: dbdemo                                                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-20 09:46:57,275 [[dbdemo].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2020-06-20 09:47:53,537 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'dbdemo'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:47:53,539 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: bulkmodeFlow
+2020-06-20 09:47:53,539 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: bulkmodeFlow.stage1
+2020-06-20 09:47:53,720 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: dbdemoFlow
+2020-06-20 09:47:53,722 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: dbdemoFlow.stage1
+2020-06-20 09:47:53,920 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: deletedemoFlow
+2020-06-20 09:47:53,920 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: deletedemoFlow.stage1
+2020-06-20 09:47:54,120 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: empsaveFlow
+2020-06-20 09:47:54,120 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: empsaveFlow.stage1
+2020-06-20 09:47:54,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: foreachdemoFlow
+2020-06-20 09:47:54,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Removing listener on endpointUri: file://statging
+2020-06-20 09:47:54,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:47:54,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:47:54,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: foreachdemoFlow.stage1
+2020-06-20 09:47:54,520 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: transactiondemoFlow
+2020-06-20 09:47:54,520 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: transactiondemoFlow.stage1
+2020-06-20 09:47:54,721 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-06-20 09:47:54,725 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2020-06-20 09:47:54,730 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/db
+2020-06-20 09:47:54,732 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-06-20 09:47:54,732 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-06-20 09:47:54,734 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'dbdemo'                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:47:54,734 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-06-20 09:47:54,735 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: bulkmodeFlow
+2020-06-20 09:47:54,735 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: bulkmodeFlow.stage1
+2020-06-20 09:47:54,735 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: dbdemoFlow
+2020-06-20 09:47:54,735 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: dbdemoFlow.stage1
+2020-06-20 09:47:54,735 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: deletedemoFlow
+2020-06-20 09:47:54,736 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: deletedemoFlow.stage1
+2020-06-20 09:47:54,736 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: empsaveFlow
+2020-06-20 09:47:54,736 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: empsaveFlow.stage1
+2020-06-20 09:47:54,736 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: foreachdemoFlow
+2020-06-20 09:47:54,737 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: foreachdemoFlow.stage1
+2020-06-20 09:47:54,737 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: transactiondemoFlow
+2020-06-20 09:47:54,737 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: transactiondemoFlow.stage1
+2020-06-20 09:47:54,739 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-06-20 09:47:54,745 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=59285da1
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-06-20 09:47:54,745 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2020-06-20 09:47:54,766 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@6e12f004: startup date [Sat Jun 20 09:46:44 IST 2020]; root of context hierarchy
+2020-06-20 09:47:54,769 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "dbdemo" shut down normally on: 20/6/20 9:47 AM        *
+* Up for: 0 days, 0 hours, 1 mins, 6.990 sec                         *
+**********************************************************************
+2020-06-20 09:47:54,966 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'dbdemo'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:47:54,981 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-06-20 09:47:54,987 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-20 09:47:54,997 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-20 09:47:55,042 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-20 09:47:55,086 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-20 09:47:55,094 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2fb3948c: startup date [Sat Jun 20 09:47:55 IST 2020]; root of context hierarchy
+2020-06-20 09:47:56,359 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-20 09:47:56,939 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-tx-log\tx2.log
+2020-06-20 09:47:56,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\dbdemo\queue-xa-tx-log\tx2.log
+2020-06-20 09:47:56,942 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-06-20 09:47:57,069 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-20 09:47:57,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: bulkmodeFlow
+2020-06-20 09:47:57,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6d96dee9
+2020-06-20 09:47:57,106 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: bulkmodeFlow.stage1
+2020-06-20 09:47:57,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: dbdemoFlow
+2020-06-20 09:47:57,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1cc71927
+2020-06-20 09:47:57,114 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: dbdemoFlow.stage1
+2020-06-20 09:47:57,115 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: deletedemoFlow
+2020-06-20 09:47:57,115 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@647f10b1
+2020-06-20 09:47:57,126 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: deletedemoFlow.stage1
+2020-06-20 09:47:57,126 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: empsaveFlow
+2020-06-20 09:47:57,127 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@427459b2
+2020-06-20 09:47:57,134 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: empsaveFlow.stage1
+2020-06-20 09:47:57,134 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: foreachdemoFlow
+2020-06-20 09:47:57,134 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@313b9ff5
+2020-06-20 09:47:57,141 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: foreachdemoFlow.stage1
+2020-06-20 09:47:57,143 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: transactiondemoFlow
+2020-06-20 09:47:57,143 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@508ddae4
+2020-06-20 09:47:57,150 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: transactiondemoFlow.stage1
+2020-06-20 09:47:57,151 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4a1d6a84
+2020-06-20 09:47:57,192 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\bulkmode.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\dbdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\deletedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\empsave.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\foreachdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\transactiondemo.xml'}]"
+2020-06-20 09:47:57,192 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\bulkmode.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\dbdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\deletedemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\empsave.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\foreachdemo.xml'}, ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\dbdemo\transactiondemo.xml'}]"
+2020-06-20 09:47:57,214 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'dbdemo'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-20 09:47:57,219 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-20 09:47:57,219 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-20 09:47:57,239 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/db
+2020-06-20 09:47:57,243 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=71cba87e
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-06-20 09:47:57,243 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=71cba87e
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-06-20 09:47:57,244 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-06-20 09:47:57,252 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-20 09:47:57,253 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: bulkmodeFlow
+2020-06-20 09:47:57,253 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: bulkmodeFlow.stage1
+2020-06-20 09:47:57,256 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: dbdemoFlow
+2020-06-20 09:47:57,256 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: dbdemoFlow.stage1
+2020-06-20 09:47:57,260 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: deletedemoFlow
+2020-06-20 09:47:57,260 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: deletedemoFlow.stage1
+2020-06-20 09:47:57,278 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: empsaveFlow
+2020-06-20 09:47:57,281 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: empsaveFlow.stage1
+2020-06-20 09:47:57,287 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: foreachdemoFlow
+2020-06-20 09:47:57,287 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: foreachdemoFlow.stage1
+2020-06-20 09:47:57,290 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: transactiondemoFlow
+2020-06-20 09:47:57,291 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: transactiondemoFlow.stage1
+2020-06-20 09:47:57,320 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Registering listener: foreachdemoFlow on endpointUri: file://statging
+2020-06-20 09:47:57,329 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:47:57,333 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Connecting clusterizable message receiver
+2020-06-20 09:47:57,333 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'null'. Object is: FileMessageReceiver
+2020-06-20 09:47:57,334 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileMessageReceiver - Starting clusterizable message receiver
+2020-06-20 09:47:57,340 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-20 09:47:57,378 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Attempting to register service with name: Mule.dbdemo:type=Endpoint,service="foreachdemoFlow",connector=connector.file.mule.default,name="endpoint.file.statging"
+2020-06-20 09:47:57,384 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Endpoint Service with name: Mule.dbdemo:type=Endpoint,service="foreachdemoFlow",connector=connector.file.mule.default,name="endpoint.file.statging"
+2020-06-20 09:47:57,385 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.dbdemo:type=Connector,name="connector.file.mule.default"
+2020-06-20 09:47:57,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: dbdemo                                                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

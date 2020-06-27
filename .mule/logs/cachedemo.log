@@ -1,0 +1,113 @@
+2020-06-27 09:13:07,928 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'cachedemo'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-27 09:13:09,287 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-06-27 09:13:09,316 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-27 09:13:09,844 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-27 09:13:10,855 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-27 09:13:10,857 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-27 09:13:11,166 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@47428937: startup date [Sat Jun 27 09:13:11 IST 2020]; root of context hierarchy
+2020-06-27 09:13:17,514 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-27 09:13:23,188 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-06-27 09:13:24,130 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\cachedemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\cachedemo\queue-tx-log\tx2.log
+2020-06-27 09:13:24,216 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\cachedemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\cachedemo\queue-xa-tx-log\tx2.log
+2020-06-27 09:13:24,496 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-27 09:13:24,504 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: cachedemoFlow
+2020-06-27 09:13:24,505 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@56476c16
+2020-06-27 09:13:24,570 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: cachedemoFlow.stage1
+2020-06-27 09:13:24,587 [main] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.416878771
+2020-06-27 09:13:25,585 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\cachedemo\cachedemo.xml'}]"
+2020-06-27 09:13:25,585 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\cachedemo\cachedemo.xml'}]"
+2020-06-27 09:13:25,597 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-06-27 09:13:25,598 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'cachedemo'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-27 09:13:25,641 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-27 09:13:25,641 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-27 09:13:25,744 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/cache
+2020-06-27 09:13:25,751 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-27 09:13:25,754 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: cachedemoFlow
+2020-06-27 09:13:25,755 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: cachedemoFlow.stage1
+2020-06-27 09:13:25,763 [main] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.416878771
+2020-06-27 09:13:25,891 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-27 09:13:46,290 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: cachedemo                                             *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-27 09:15:41,555 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'cachedemo'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-27 09:15:41,566 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: cachedemoFlow
+2020-06-27 09:15:41,567 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: cachedemoFlow.stage1
+2020-06-27 09:15:41,612 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Stopping component: component.416878771
+2020-06-27 09:15:41,622 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-06-27 09:15:41,639 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/cache
+2020-06-27 09:15:41,641 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-06-27 09:15:41,644 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-06-27 09:15:41,654 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'cachedemo'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-27 09:15:41,656 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-06-27 09:15:41,658 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: cachedemoFlow
+2020-06-27 09:15:41,659 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: cachedemoFlow.stage1
+2020-06-27 09:15:41,660 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Disposing component: component.416878771
+2020-06-27 09:15:41,668 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-06-27 09:15:42,266 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@47428937: startup date [Sat Jun 27 09:13:11 IST 2020]; root of context hierarchy
+2020-06-27 09:15:42,322 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "cachedemo" shut down normally on: 27/6/20 9:15 AM     *
+* Up for: 0 days, 0 hours, 2 mins, 16.691 sec                        *
+**********************************************************************
+2020-06-27 09:15:42,908 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'cachedemo'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-27 09:15:42,961 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-06-27 09:15:43,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-06-27 09:15:43,111 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-06-27 09:15:43,624 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-06-27 09:15:43,630 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-06-27 09:15:43,676 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@69bddacf: startup date [Sat Jun 27 09:15:43 IST 2020]; root of context hierarchy
+2020-06-27 09:15:46,138 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-27 09:15:46,626 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\cachedemo\queue-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\cachedemo\queue-tx-log\tx2.log
+2020-06-27 09:15:46,635 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\gitrepo\qt-mule\.mule\.\.mule\cachedemo\queue-xa-tx-log\tx1.log and F:\gitrepo\qt-mule\.mule\.\.mule\cachedemo\queue-xa-tx-log\tx2.log
+2020-06-27 09:15:46,695 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-06-27 09:15:46,705 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: cachedemoFlow
+2020-06-27 09:15:46,705 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@f02df07
+2020-06-27 09:15:46,717 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: cachedemoFlow.stage1
+2020-06-27 09:15:46,738 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Initialising component: component.48153589
+2020-06-27 09:15:46,829 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\cachedemo\cachedemo.xml'}]"
+2020-06-27 09:15:46,829 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\gitrepo\qt-mule\.mule\apps\cachedemo\cachedemo.xml'}]"
+2020-06-27 09:15:46,832 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'cachedemo'                                 +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-06-27 09:15:46,841 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-06-27 09:15:46,853 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-06-27 09:15:46,959 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/cache
+2020-06-27 09:15:46,972 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-06-27 09:15:46,982 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: cachedemoFlow
+2020-06-27 09:15:46,984 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: cachedemoFlow.stage1
+2020-06-27 09:15:46,988 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.component.ComponentLifecycleManager - Starting component: component.48153589
+2020-06-27 09:15:47,020 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-06-27 09:15:47,039 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: cachedemo                                             *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-06-27 09:16:01,469 [[cachedemo].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - inside cache scope

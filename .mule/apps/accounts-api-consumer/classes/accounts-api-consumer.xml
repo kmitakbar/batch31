@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:smtp="http://www.mulesoft.org/schema/mule/smtp" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+<mule xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:spring="http://www.springframework.org/schema/beans" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
-http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
-http://www.mulesoft.org/schema/mule/smtp http://www.mulesoft.org/schema/mule/smtp/current/mule-smtp.xsd">
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd">
     <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" basePath="api/accounts/v1" doc:name="HTTP Listener Configuration"/>
     <http:request-config name="account_API" host="localhost" port="9999" basePath="account" doc:name="HTTP Request Configuration"/>
     <http:request-config name="customer_api" host="localhost" port="8888" basePath="customer/api" doc:name="HTTP Request Configuration"/>
     <http:request-config name="customer_rest_api" host="localhost" port="8888" basePath="customer/api" doc:name="HTTP Request Configuration"/>
-    <smtp:gmail-connector name="Gmail" validateConnections="true" doc:name="Gmail"/>
     <flow name="accounts-api-consumerFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/accountslist" allowedMethods="GET" doc:name="HTTP"/>
         <set-payload value="#[message.inboundProperties.'http.request.path']" doc:name="Set Payload"/>
@@ -43,12 +41,5 @@ flowVars.accounts_results map (val,index) ->{
 	social:getsocialdetails(val.email)-'gender'-'state'
 } filter $.amount>100000]]></dw:set-payload>
         </dw:transform-message>
-        <flow-ref name="audit_asyncFlow" doc:name="Flow Reference"/>
-        <catch-exception-strategy doc:name="Catch Exception Strategy">
-            <logger message="inside error handling sesction #[payload]" level="INFO" doc:name="Logger"/>
-            <logger message="exception data #[exception.getCauseException()]" level="INFO" doc:name="Logger"/>
-            <set-payload value="#[exception]" doc:name="Set Payload"/>
-            <smtp:outbound-endpoint host="smtp.gmail.com" port="587" user="mule4java@gmail.com" password="May#1987" connector-ref="Gmail" to="krushna57916@gmail.com" from="mule4java@gmail.com" subject="Error in Usecase flow" responseTimeout="10000" doc:name="SMTP"/>
-        </catch-exception-strategy>
     </flow>
 </mule>
